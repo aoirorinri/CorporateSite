@@ -1,0 +1,461 @@
+/* common */
+
+:root {
+  --main-color: #000000;
+  --base-color: #F0F0F0;
+  --acsent-color: #FFFFFF;
+}
+
+
+/* footer {
+  display: none;
+} */
+
+body {
+  background: var(--base-color);
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: normal;
+  letter-spacing: 10.8px;
+  line-height: 54px;
+  margin-bottom: 10px;
+}
+
+h2 span {
+  display: block;
+  font-size: 14px;
+  font-weight: normal;
+  letter-spacing: normal;
+  margin-bottom: 36px;
+}
+
+.line {
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: var(--main-color);
+  margin-bottom: 60px;
+}
+
+p {
+  font-size: 16px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: .4s;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+.container {
+  max-width: 1000px;
+  /* margin: 200px; */
+  /* margin: 200px 14%; */
+  margin: 200px auto;
+}
+
+
+/* header  */
+
+header {
+  margin-left: 91px;
+  display: flex;
+  height: 80px;
+}
+
+header img {
+  width: 100px;
+  margin-right: 60px;
+  padding: 30px 0;
+}
+
+header a {
+  font-size: 14px;
+}
+
+header ul {
+  display: flex;
+}
+
+header li a {
+  display: block;
+  padding: 30px 15px;
+}
+
+header li a:hover {
+  background: var(--acsent-color);
+  opacity: .5;
+}
+
+header li:last-child {
+  text-align: right;
+}
+
+header .right {
+  line-height: 14px;
+  padding: 30px 76px;
+  margin-left: auto;
+  text-align: center;
+  background: var(--main-color);
+  color: var(--acsent-color);
+  white-space: nowrap;
+}
+
+
+/* .main-visual */
+
+.main-visual img {
+  width: 100vw;
+  margin: 0 calc(50% - 50vw);
+}
+
+
+/* news */
+
+.news {
+  margin-top: 120px;
+}
+
+.article {
+  margin-bottom: 40px;
+}
+
+.news .article-data {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.news .tag p {
+  color: var(--acsent-color);
+  background: var(--main-color);
+  padding: 1px 7px;
+  margin-left: 10px;
+  font-size: 12px;
+}
+
+.news time {
+  font-size: 14px;
+}
+
+.news ul {
+  display: flex;
+}
+
+.news li {
+  padding-right: 77px;
+}
+
+.news ul li+li {
+  border-left: 1px solid var(--main-color);
+  padding-left: 20px;
+}
+
+
+/* about */
+
+.about img {
+  display: block;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.about {
+  display: flex;
+  gap: 70px;
+  margin-right: 89px;
+  
+}
+
+.about-visual {
+  width: 55%;
+  margin-bottom: 150px;
+}
+
+.about-desc {
+  margin-top: 150px;
+  line-height: 30px;
+}
+
+
+/* business */
+
+.business-contents {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  padding: 0 10%;
+
+}
+
+.business-desc {
+  width: 100%;
+  padding: 7% 0;
+}
+
+.business .left {
+  width: 50%;
+  margin-top: 100px;
+}
+
+.business .right {
+  width: 50%;
+ margin-bottom: 100px;
+}
+
+.business-desc:last-child {
+  margin-bottom: 100px;
+}
+
+.business p {
+  font-size: 14px;
+}
+
+.business img {
+  display: block;
+  width: 100%;
+}
+
+.small-line {
+  display: block;
+  width: 8px;
+  height: 2px;
+  background: var(--main-color);
+  margin: 10px;
+}
+
+.business-desc p {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+
+/* company */
+
+.company {
+  height: 1000px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.company-desc {
+  width: 55%;
+  background: var(--acsent-color);
+  padding: 100px 8% 100px 6%;
+  width: 567px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.company-visual{
+  width: 53%;
+  position: absolute;
+  top: 115px;
+  right: 0;
+}
+.company-visual img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+dl {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.company dt {
+  width: 20%;
+  margin-top: 10px;
+}
+.company dt:first-of-type {
+  margin-top: 0;
+}
+.company  dd {
+  width: 80%;
+  margin-top: 10px;
+}
+
+.company dd:first-of-type {
+  margin-top: 0;
+}
+
+
+footer {
+  background: var(--acsent-color);
+  padding: 40px 200px 20px 200px;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+footer img {
+  width: 100px;
+  height: 25px;
+}
+
+footer .flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+small {
+  font-size: 12px;
+}
+
+
+/* mobil */
+
+@media (max-width: 900px) {
+  /* common */
+  .container {
+    max-width: 900px;
+    margin: 0 16px;
+    /* padding: 0 16px; */
+  }
+  h2 span {
+    margin-bottom: 24px;
+  }
+  /* header */
+  header {
+    width: 95%;
+    margin: 0;
+    padding-left: 5%;
+    display: block;
+  }
+  header img {
+    width: 80px;
+    padding: 16px 0;
+  }
+  header h1 a {
+    display: block;
+    width: 95%;
+    height: 44px;
+  }
+  header ul {
+    width: 95%;
+  }
+  header li a {
+    display: block;
+    padding: 0;
+    margin-right: 30px;
+  }
+  header li a:hover {
+    background: none;
+  }
+  header .right {
+    display: none;
+  }
+  .main-visual img {
+    height: 600px;
+    object-fit: cover;
+  }
+  /* .news */
+  .news ul {
+    display: block;
+  }
+  .news ul li+li {
+    border: none;
+    padding-left: 0;
+  }
+  /* .about */
+  .about img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  .about {
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+  .about-visual {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .about-desc {
+    margin: 0;
+    padding: 0 16px;
+  }
+  /* .business */
+  .business-contents {
+  display: block;
+  }
+
+  .business-desc {
+    padding: 30px 0;
+  }
+
+  .business-desc:nth-child(2) {
+    margin: 0;
+  }
+
+  .business .left {
+    width: 100%;
+    margin: 0;
+  }
+  .business .right {
+    width: 100%;
+  }
+  .business img {
+    width: 100%;
+    /* width: 368px; */
+    /* height: 232px; */
+  }
+  /* company */
+  .company {
+    width: 95%;
+    height: 1200px;
+    display: block;
+    position: static;
+  }
+  .company-desc {
+    padding: 5%;
+    width: 90%;
+    position: static;
+    margin-bottom: 20px;
+  }
+  .company-visual {
+    width: 100%;
+    position: static;
+  }
+  .company img {
+    width: 100%;
+    position: static
+  }
+  /* footer */
+  footer {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+  footer img {
+    margin-bottom: 10px;
+  }
+  footer .flex {
+    display: block;
+  }
+  footer .info {
+    margin-bottom: 40px;
+  }
+}
